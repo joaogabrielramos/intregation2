@@ -1,0 +1,28 @@
+.republic{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.republic-img{
+    background: rgba(10, 147, 226, 0.808);
+    width: 30%;
+    height: 20vh;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.comentario{
+    border: solid 1px;
+    border-color: #afafaf;
+    border-radius: 20px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.botao ion-button{
+    width: 60%;
+}

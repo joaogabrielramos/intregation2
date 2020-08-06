@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Hommy
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content [fullscreen]="true">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button routerLink="/cadastro"><ion-icon name="person-circle-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button routerLink="/anunciar"><ion-icon name="create-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-header collapse="condense"></ion-header>
+  <ion-text>
+    <h4 class="recommended">Recomendados</h4>
+  </ion-text>
+  <ion-slides pager="true"[options]="slideOpts">
+    <ion-slide *ngFor="let republica of republicasArray">
+      <ion-card (click)="saveRepublic(republica)">
+        <!-- <img src="{{republica.imagem}}"/> -->
+        <ion-card-header>
+          <ion-card-title><h5>{{republica.name}}</h5></ion-card-title>
+          <ion-card-subtitle>{{republica.address}}</ion-card-subtitle>
+          <ion-text><h6>{{republica.city}}</h6></ion-text>
+          <ion-text><h6>{{republica.district}}</h6></ion-text>
+          <ion-text><h6>{{republica.description}}</h6></ion-text>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <ion-text>
+    <h4 class="next-to-you">Próximos a você</h4>
+  </ion-text>
+  <!-- <ion-slides pager="true"[options]="slideOpts">
+    <ion-slide *ngFor="let republica2 of republicas2">
+      <ion-card>
+        <img src="{{republica2.imagem}}"/>
+        <ion-card-header>
+          <ion-card-title><h5>{{republica2.titulo}}</h5></ion-card-title>
+          <ion-card-subtitle>{{republica2.subtitulo}}</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-slide>
+  </ion-slides> -->
+</ion-content>
+ 

@@ -1,0 +1,53 @@
+ion-title{
+    font-family: 'Modak', cursive;
+    font-size: 33px;
+    text-align: center;
+}
+
+ion-fab-button {
+    --background: #DE5D5D;
+}
+
+ion-fab-button ion-icon {
+    color: white;
+}
+
+ion-text .recommended {
+    color: #DE5D5D;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+ion-text .next-to-you {
+    color: #DE5D5D;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 19px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+ion-card {
+    box-shadow: none;
+}
+
+ion-card img{
+
+    width:  95%;
+    max-height: 220px ;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+ion-card-header {
+    text-align: start;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+
+ion-card-title h5 {
+    margin: 0;
+}

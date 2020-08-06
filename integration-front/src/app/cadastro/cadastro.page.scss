@@ -1,0 +1,32 @@
+ion-content {
+    font-family: 'Roboto', sans-serif;
+}
+
+ion-toolbar {
+    --background: #FF3F4D;
+}
+ion-title{
+    font-family: 'Modak', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+span {
+
+    color: #FF3F4D;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+// ion-input {
+//     width: 90%;
+//     background-color: #DE5D5D;
+//     border-radius: 20px;
+//     border: 1px solid lightgrey;
+    
+// }
+
+ion-list {
+    padding: 0;
+}

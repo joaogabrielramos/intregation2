@@ -1,0 +1,14 @@
+<ion-card class='ion-padding'>
+  <div class='title-edit'>
+    <ion-card-title>
+      {{comentario.username}}
+    </ion-card-title>
+    <div>
+      <ion-icon *ngIf='checkUser(comentario.username)' (click)='edit(comentario.id)' color='primary'  name='create-outline'></ion-icon>
+      <ion-icon *ngIf='checkUser(comentario.username)' (click)='deleteComment(comentario.id)' color='primary'  name='trash'></ion-icon>
+    </div>
+  </div>
+  <ion-card-subtitle>
+    {{comentario.text}}
+  </ion-card-subtitle>
+</ion-card>

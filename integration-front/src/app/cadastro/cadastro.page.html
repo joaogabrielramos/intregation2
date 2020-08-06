@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-title>
+    Registrar-se
+  </ion-title>
+  <div class="ion-padding">
+    <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Usuário</ion-label>
+          <ion-input type="text" formControlName="username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input placeholder="hommyapp@hommy.com" type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Instituição Educacional</ion-label>
+          <ion-input type="text" formControlName="educationalInstitution"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input placeholder="6 a 32 caracteres" type="password" formControlName="password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-row class="ion-justify-content-center">
+        <ion-button (click)= "presentToast()" color="light" type="submit" shape="round" [disabled]="registerForm.invalid"><span>Enviar</span></ion-button>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>
